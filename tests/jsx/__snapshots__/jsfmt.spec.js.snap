@@ -348,23 +348,23 @@ exports[`expression.js 1`] = `
 }/>;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <View
-  style={{
+ style={{
+  someVeryLongStyle1: "true",
+  someVeryLongStyle2: "true",
+  someVeryLongStyle3: "true",
+  someVeryLongStyle4: "true"
+ }}
+/>;
+
+<View
+ style={[
+  {
     someVeryLongStyle1: "true",
     someVeryLongStyle2: "true",
     someVeryLongStyle3: "true",
     someVeryLongStyle4: "true"
-  }}
-/>;
-
-<View
-  style={[
-    {
-      someVeryLongStyle1: "true",
-      someVeryLongStyle2: "true",
-      someVeryLongStyle3: "true",
-      someVeryLongStyle4: "true"
-    }
-  ]}
+  }
+ ]}
 />;
 
 <Something>
@@ -394,18 +394,18 @@ exports[`expression.js 1`] = `
 </Something>;
 
 <RadioListItem
-  key={option}
-  imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
-  }
-  imageSize={this.props.veryBigItemImageSize}
-  imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
-  }
-  heading={this.props.displayTextFunc(option)}
-  value={option}
+ key={option}
+ imageSource={
+  this.props.veryBigItemImageSourceFunc &&
+  this.props.veryBigItemImageSourceFunc(option)
+ }
+ imageSize={this.props.veryBigItemImageSize}
+ imageView={
+  this.props.veryBigItemImageViewFunc &&
+  this.props.veryBigItemImageViewFunc(option)
+ }
+ heading={this.props.displayTextFunc(option)}
+ value={option}
 />;
 
 <ParentComponent prop={<Child>test</Child>} />;
@@ -494,10 +494,10 @@ exports[`hug.js 1`] = `
     <div>
       {routes.map(route => (
         <MatchAsync
-          key={\`\${route.to}-async\`}
-          pattern={route.to}
-          exactly={route.to === "/"}
-          getComponent={routeES6Modules[route.value]}
+         key={\`\${route.to}-async\`}
+         pattern={route.to}
+         exactly={route.to === "/"}
+         getComponent={routeES6Modules[route.value]}
         />
       ))}
     </div>
@@ -601,10 +601,10 @@ const tabs = [
     title: "General Info",
     content: (
       <GeneralForm
-        long-attribute="i-need-long-value-here"
-        onSave={onSave}
-        onCancel={onCancel}
-        countries={countries}
+       long-attribute="i-need-long-value-here"
+       onSave={onSave}
+       onCancel={onCancel}
+       countries={countries}
       />
     )
   }
@@ -624,19 +624,17 @@ onClick={() => {
 }}>{header}<showSort attr="long long long long long long long long long long long"/></td>;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <td
-  onClick={() => {
-    a;
-  }}
->
+ onClick={() => {
+  a;
+ }}>
   {header}
   {showSort}
 </td>;
 
 <td
-  onClick={() => {
-    a;
-  }}
->
+ onClick={() => {
+  a;
+ }}>
   {header}
   <showSort attr="long long long long long long long long long long long" />
 </td>;
@@ -659,12 +657,12 @@ a = [
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 a = [
   <path
-    key="0"
-    d="M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,"
+   key="0"
+   d="M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,"
   />,
   <path
-    key="1"
-    d="M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,"
+   key="1"
+   d="M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,M13.6,10.6l,4-2.8L9.5,"
   />
 ];
 

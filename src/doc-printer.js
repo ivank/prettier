@@ -25,6 +25,14 @@ function makeIndent(ind) {
   };
 }
 
+function makeAddSpace(ind) {
+  return {
+    indent: ind.indent,
+    align: ind.align,
+    addSpace: ind.indent
+  };
+}
+
 function makeAlign(ind, n) {
   if (n === -Infinity) {
     return {
@@ -81,6 +89,10 @@ function fits(next, restCommands, width, mustBeFlat) {
           break;
         case "align":
           cmds.push([makeAlign(ind, doc.n), mode, doc.contents]);
+
+          break;
+        case "add-space":
+          cmds.push([makeAddSpace(ind), mode, doc.contents]);
 
           break;
         case "group":
@@ -172,6 +184,10 @@ function printDocToString(doc, options) {
           break;
         case "align":
           cmds.push([makeAlign(ind, doc.n), mode, doc.contents]);
+
+          break;
+        case "add-space":
+          cmds.push([makeAddSpace(ind), mode, doc.contents]);
 
           break;
         case "group":
@@ -403,7 +419,8 @@ function printDocToString(doc, options) {
                 const indentString = options.useTabs
                   ? "\t".repeat(ind.indent + ind.align.tabs)
                   : " ".repeat(length);
-                out.push(newLine + indentString);
+                const addSpace = ind.addSpace === ind.indent ? " " : "";
+                out.push(newLine + indentString + addSpace);
                 pos = length;
               }
               break;

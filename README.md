@@ -1,3 +1,7 @@
+# Enhancv style JSX for Prettier
+
+This is a small tweek of [prettier](https://github.com/prttier/prettier). Multiline attributes are indented with only one space, and `jsxBracketSameLine` defaults to true. This produces better output for large nested JSX files. The pros/cons of this have been discussed in this [prettier PR](https://github.com/prettier/prettier/pull/2082)
+
 # Prettier
 
 [![Gitter](https://badges.gitter.im/gitterHQ/gitter.svg)](https://gitter.im/jlongster/prettier)

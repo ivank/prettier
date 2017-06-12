@@ -17,6 +17,7 @@ const literalline = docBuilders.literalline;
 const group = docBuilders.group;
 const indent = docBuilders.indent;
 const align = docBuilders.align;
+const addSpace = docBuilders.addSpace;
 const conditionalGroup = docBuilders.conditionalGroup;
 const fill = docBuilders.fill;
 const ifBreak = docBuilders.ifBreak;
@@ -1770,7 +1771,7 @@ function genericPrintNoParens(path, options, print, args) {
           "<",
           path.call(print, "name"),
           concat([
-            indent(
+            addSpace(
               concat(
                 path.map(attr => concat([line, print(attr)]), "attributes")
               )

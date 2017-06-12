@@ -1,13 +1,19 @@
 {
-  "name": "prettier",
+  "name": "prettier-ecv",
   "version": "1.7.0",
-  "description": "Prettier is an opinionated code formatter",
+  "description": "Enhancv style JSX for Prettier - an opinionated JavaScript formatter",
   "bin": {
     "prettier": "./bin/prettier.js"
   },
-  "repository": "prettier/prettier",
+  "repository": "enhancv/prettier",
   "homepage": "https://prettier.io",
   "author": "James Long",
+  "contributors": [
+    {
+      "name": "Ivan Kerin",
+      "email": "ikerin@gmail.com"
+    }
+  ],
   "license": "MIT",
   "main": "./index.js",
   "engines": {

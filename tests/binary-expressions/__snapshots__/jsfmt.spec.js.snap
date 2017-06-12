@@ -399,11 +399,11 @@ exports[`jsx_parent.js 1`] = `
 </div>;
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 <div
-  src={
-    !isJellyfishEnabled &&
-    diffUpdateMessageInput != null &&
-    this.state.isUpdateMessageEmpty
-  }
+ src={
+  !isJellyfishEnabled &&
+  diffUpdateMessageInput != null &&
+  this.state.isUpdateMessageEmpty
+ }
 />;
 
 <div>

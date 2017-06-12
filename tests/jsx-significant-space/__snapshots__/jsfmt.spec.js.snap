@@ -110,7 +110,7 @@ before = (
 before_break1 = (
   <span>
     <span
-      barbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbar
+     barbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbar
     />{" "}
     foo
   </span>
@@ -119,7 +119,7 @@ before_break1 = (
 before_break2 = (
   <span>
     <span
-      barbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbar
+     barbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbarbar
     />{" "}
     foo
   </span>
