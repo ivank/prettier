@@ -52,41 +52,38 @@ long_obj =
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 long_closed = (
   <BaseForm
-    url="/auth/google"
-    method="GET"
-    colour="blue"
-    size="large"
-    submitLabel="Sign in with Google"
+   url="/auth/google"
+   method="GET"
+   colour="blue"
+   size="large"
+   submitLabel="Sign in with Google"
   />
 );
 
 long_open = (
   <BaseForm
-    url="/auth/google"
-    method="GET"
-    colour="blue"
-    size="large"
-    submitLabel="Sign in with Google"
-  >
+   url="/auth/google"
+   method="GET"
+   colour="blue"
+   size="large"
+   submitLabel="Sign in with Google">
     hello
   </BaseForm>
 );
 
 long_open_long_children = (
   <BaseForm
-    url="/auth/google"
-    method="GET"
-    colour="blue"
-    size="large"
-    submitLabel="Sign in with Google"
-  >
+   url="/auth/google"
+   method="GET"
+   colour="blue"
+   size="large"
+   submitLabel="Sign in with Google">
     <BaseForm
-      url="/auth/google"
-      method="GET"
-      colour="blue"
-      size="large"
-      submitLabel="Sign in with Google"
-    >
+     url="/auth/google"
+     method="GET"
+     colour="blue"
+     size="large"
+     submitLabel="Sign in with Google">
       Hello world
     </BaseForm>
     <div>
@@ -111,42 +108,40 @@ long_open_long_children = (
       <div>
         <div>
           <div
-            attr="long"
-            attr2="also long"
-            attr3="gonna break"
-            attr4="hello please break me"
+           attr="long"
+           attr2="also long"
+           attr3="gonna break"
+           attr4="hello please break me"
           />
         </div>
       </div>
     </div>
     <BaseForm
-      url="/auth/google"
-      method="GET"
-      colour="blue"
-      size="large"
-      submitLabel="Sign in with Google"
-    >
+     url="/auth/google"
+     method="GET"
+     colour="blue"
+     size="large"
+     submitLabel="Sign in with Google">
       <BaseForm
-        url="/auth/google"
-        method="GET"
-        colour="blue"
-        size="large"
-        submitLabel="Sign in with Google"
+       url="/auth/google"
+       method="GET"
+       colour="blue"
+       size="large"
+       submitLabel="Sign in with Google"
       />d
     </BaseForm>
     <BaseForm
-      url="/auth/google"
-      method="GET"
-      colour="blue"
-      size="large"
-      submitLabel="Sign in with Google"
-    >
+     url="/auth/google"
+     method="GET"
+     colour="blue"
+     size="large"
+     submitLabel="Sign in with Google">
       <BaseForm
-        url="/auth/google"
-        method="GET"
-        colour="blue"
-        size="large"
-        submitLabel="Sign in with Google"
+       url="/auth/google"
+       method="GET"
+       colour="blue"
+       size="large"
+       submitLabel="Sign in with Google"
       />
     </BaseForm>
   </BaseForm>
@@ -163,30 +158,29 @@ short_open = (
 make_self_closing = (
   <div>
     <BaseForm
-      url="/auth/google"
-      method="GET"
-      colour="blue"
-      size="large"
-      submitLabel="Sign in with Google"
+     url="/auth/google"
+     method="GET"
+     colour="blue"
+     size="large"
+     submitLabel="Sign in with Google"
     />
     <BaseForm
-      url="/auth/google"
-      method="GET"
-      colour="blue"
-      size="large"
-      submitLabel="Sign in with Google"
+     url="/auth/google"
+     method="GET"
+     colour="blue"
+     size="large"
+     submitLabel="Sign in with Google"
     />
   </div>
 );
 
 leave_opening = (
   <BaseForm
-    url="/auth/google"
-    method="GET"
-    colour="blue"
-    size="large"
-    submitLabel="Sign in with Google"
-  >
+   url="/auth/google"
+   method="GET"
+   colour="blue"
+   size="large"
+   submitLabel="Sign in with Google">
     {" "}
   </BaseForm>
 );
@@ -199,23 +193,21 @@ long_string = (
 
 long_string_with_extra_param = (
   <div
-    className="i use bootstrap and just put loooaads of classnames in here all the time"
-    blah="3"
-  >
+   className="i use bootstrap and just put loooaads of classnames in here all the time"
+   blah="3">
     hello world
   </div>
 );
 
 long_obj = (
   <div
-    style={{
-      i: "dont",
-      use: "bootstrap",
-      and: "instead",
-      use: "massive",
-      objects
-    }}
-  >
+   style={{
+    i: "dont",
+    use: "bootstrap",
+    and: "instead",
+    use: "massive",
+    objects
+   }}>
     hello world
   </div>
 );

@@ -35,6 +35,12 @@ function align(n, contents) {
   return { type: "align", contents, n };
 }
 
+function addSpace(contents) {
+  assertDoc(contents);
+
+  return { type: "add-space", contents };
+}
+
 function group(contents, opts) {
   opts = opts || {};
 
@@ -135,5 +141,6 @@ module.exports = {
   ifBreak,
   indent,
   align,
+  addSpace,
   addAlignmentToDoc
 };

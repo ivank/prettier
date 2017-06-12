@@ -13,7 +13,7 @@ const defaults = {
   singleQuote: false,
   trailingComma: "none",
   bracketSpacing: true,
-  jsxBracketSameLine: false,
+  jsxBracketSameLine: true,
   parser: "babylon",
   semi: true
 };

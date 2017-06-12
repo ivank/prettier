@@ -482,13 +482,12 @@ unstable_after_first_run = (
 
 solitary_whitespace = (
   <div
-    first="first"
-    second="second"
-    third="third"
-    fourth="fourth"
-    fifth="fifth"
-    sixth="sixth"
-  >
+   first="first"
+   second="second"
+   third="third"
+   fourth="fourth"
+   fifth="fifth"
+   sixth="sixth">
     {" "}
   </div>
 );

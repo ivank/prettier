@@ -147,8 +147,8 @@ regression_extra_newline_2 = (
   <div>
     (
     <FormattedMessage
-      id="some-id"
-      defaultMessage="some loooooooooooooooooooooooooooong default"
+     id="some-id"
+     defaultMessage="some loooooooooooooooooooooooooooong default"
     />
     )
   </div>
