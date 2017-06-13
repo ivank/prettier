@@ -1779,7 +1779,7 @@ function genericPrintNoParens(path, options, print, args) {
             n.selfClosing ? line : options.jsxBracketSameLine ? ">" : softline
           ]),
           n.selfClosing ? "/>" : options.jsxBracketSameLine ? "" : ">"
-        ])
+        ]), n.attributes.length > 1 ? {shouldBreak: true} : {}
       );
     }
     case "JSXClosingElement":

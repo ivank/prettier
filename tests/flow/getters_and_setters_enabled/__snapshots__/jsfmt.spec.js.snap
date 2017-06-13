@@ -542,7 +542,10 @@ const Example = React.createClass({
 <Example />; // error: property \`a\` not found
 <Example a={0} />; // ok
 <Example a="bad" />; // error: number ~> string
-<Example a={0} c={0} />; // error: number ~> string
+<Example
+ a={0}
+ c={0}
+/>; // error: number ~> string
 
 `;
 

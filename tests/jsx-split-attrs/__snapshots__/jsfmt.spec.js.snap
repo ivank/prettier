@@ -100,7 +100,11 @@ long_open_long_children = (
     <div>
       <div>
         <div>
-          <div attr="long" attr2="also long" attr3="gonna break" />
+          <div
+           attr="long"
+           attr2="also long"
+           attr3="gonna break"
+          />
         </div>
       </div>
     </div>
@@ -147,10 +151,17 @@ long_open_long_children = (
   </BaseForm>
 );
 
-short_closed = <BaseForm url="/auth/google" method="GET" />;
+short_closed = (
+  <BaseForm
+   url="/auth/google"
+   method="GET"
+  />
+);
 
 short_open = (
-  <BaseForm url="/auth/google" method="GET">
+  <BaseForm
+   url="/auth/google"
+   method="GET">
     hello
   </BaseForm>
 );
