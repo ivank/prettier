@@ -1296,7 +1296,7 @@ var description = "Prettier is an opinionated JavaScript formatter";
 var bin = { "prettier": "./bin/prettier.js" };
 var repository = "ivank/prettier";
 var author = "James Long";
-var contributors = [{ "name": "Ivan Kerin", "email": "ikerin@gmail.com" }];
+var contributors = [{ "name": "Ivan Kerin", "email": "ikerin@gmail.com" }, { "name": "Aleksandar Ginovski", "email": "sashko.ginovski@gmail.com" }];
 var license = "MIT";
 var main = "./index.js";
 var dependencies = { "babel-code-frame": "7.0.0-alpha.12", "babylon": "7.0.0-beta.13", "chalk": "1.1.3", "diff": "3.2.0", "esutils": "2.0.2", "flow-parser": "0.47.0", "get-stream": "3.0.0", "glob": "7.1.2", "graphql": "0.10.1", "jest-validate": "20.0.3", "json-to-ast": "2.0.0-alpha1.2", "minimist": "1.2.0", "parse5": "3.0.2", "postcss": "^6.0.1", "postcss-less": "^1.0.0", "postcss-media-query-parser": "0.2.3", "postcss-scss": "1.0.0", "postcss-selector-parser": "2.2.3", "postcss-values-parser": "git://github.com/shellscape/postcss-values-parser.git#5e351360479116f3fe309602cdd15b0a233bc29f", "typescript": "2.5.0-dev.20170617", "typescript-eslint-parser": "git://github.com/eslint/typescript-eslint-parser.git#cfddbfe3ebf550530aef2f1c6c4ea1d9e738d9c1" };
@@ -5607,7 +5607,7 @@ function genericPrintNoParens(path$$1, options, print, args) {
 
         return group$1(concat$2(["<", path$$1.call(print, "name"), concat$2([indent$2(concat$2(path$$1.map(function (attr) {
           return concat$2([line$1, print(attr)]);
-        }, "attributes"))), _n2.selfClosing ? line$1 : options.jsxBracketSameLine ? ">" : softline$1]), _n2.selfClosing ? "/>" : options.jsxBracketSameLine ? "" : ">"]));
+        }, "attributes"))), _n2.selfClosing ? line$1 : options.jsxBracketSameLine ? ">" : softline$1]), _n2.selfClosing ? "/>" : options.jsxBracketSameLine ? "" : ">"]), _n2.attributes.length > 1 ? { shouldBreak: true } : {});
       }
     case "JSXClosingElement":
       return concat$2(["</", path$$1.call(print, "name"), ">"]);

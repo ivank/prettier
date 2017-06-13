@@ -392,7 +392,10 @@ function DiffOverview(props) {
           metadata are omitted for easier review.
         </p>
       </div>
-      <Diff source={source} target={target} />
+      <Diff
+       source={source}
+       target={target}
+      />
     </div>
   );
 }

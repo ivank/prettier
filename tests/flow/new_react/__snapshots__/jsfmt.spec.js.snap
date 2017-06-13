@@ -66,7 +66,12 @@ var FeedUFI = React.createClass({
     };
     var ignored = <UFILikeCount {...props} />;
     return (
-      <UFILikeCount className="" key="" feedback={feedback} permalink="" />
+      <UFILikeCount
+       className=""
+       key=""
+       feedback={feedback}
+       permalink=""
+      />
     );
   },
 
@@ -586,7 +591,13 @@ var TestProps = React.createClass({
   }
 });
 
-var element = <TestProps x={false} y={false} z={false} />; // 3 errors
+var element = (
+  <TestProps
+   x={false}
+   y={false}
+   z={false}
+  />
+); // 3 errors
 
 (element: $jsx<*>);
 (element: $jsx<TestProps>);
@@ -630,7 +641,12 @@ var D = React.createClass({
   render: function() {
     var obj = { bar: 0 };
     var s: string = this.state.bar;
-    return <C {...this.state} foo={0} />;
+    return (
+      <C
+       {...this.state}
+       foo={0}
+      />
+    );
   }
 });
 
