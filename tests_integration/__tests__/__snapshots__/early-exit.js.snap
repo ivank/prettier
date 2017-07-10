@@ -80,7 +80,7 @@ exports[`show detailed usage with --help jsx-bracket-same-line 1`] = `
 
   Put > on the last line instead of at a new line.
 
-Default: false
+Default: true
 "
 `;
 
@@ -288,7 +288,7 @@ Format options:
 
   --no-bracket-spacing     Do not print spaces between brackets.
   --jsx-bracket-same-line  Put > on the last line instead of at a new line.
-                           Defaults to false.
+                           Defaults to true.
   --parser <flow|babylon|typescript|css|less|scss|json|graphql>
                            Which parser to use.
                            Defaults to babylon.
@@ -403,7 +403,7 @@ Format options:
 
   --no-bracket-spacing     Do not print spaces between brackets.
   --jsx-bracket-same-line  Put > on the last line instead of at a new line.
-                           Defaults to false.
+                           Defaults to true.
   --parser <flow|babylon|typescript|css|less|scss|json|graphql>
                            Which parser to use.
                            Defaults to babylon.

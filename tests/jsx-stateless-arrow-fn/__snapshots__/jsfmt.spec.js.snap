@@ -76,25 +76,33 @@ const renderTernary = (props) =>
   </BaseForm>
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const render1 = ({ styles }) => (
-  <div style={styles} key="something">
+  <div
+   style={styles}
+   key="something">
     Keep the wrapping parens. Put each key on its own line.
   </div>
 );
 
 const render2 = ({ styles }) => (
-  <div style={styles} key="something">
+  <div
+   style={styles}
+   key="something">
     Create wrapping parens.
   </div>
 );
 
 const render3 = ({ styles }) => (
-  <div style={styles} key="something">
+  <div
+   style={styles}
+   key="something">
     Create wrapping parens.
   </div>
 );
 
 const render4 = ({ styles }) => (
-  <div style={styles} key="something">
+  <div
+   style={styles}
+   key="something">
     Create wrapping parens and indent <strong>all the things</strong>.
   </div>
 );
@@ -102,7 +110,10 @@ const render4 = ({ styles }) => (
 const render5 = ({ styles }) => <div>Keep it on one line.</div>;
 
 const render6 = ({ styles }) => (
-  <div attr1="aaaaaaaaaaaaaaaaa" attr2="bbbbbbbbbbb" attr3="cccccccccccc">
+  <div
+   attr1="aaaaaaaaaaaaaaaaa"
+   attr2="bbbbbbbbbbb"
+   attr3="cccccccccccc">
     <div
      attr1="aaaaaaaaaaaaaaaaa"
      attr2="bbbbbbbbbbb"
@@ -199,36 +210,38 @@ const renderTernary = props => (
    colour="blue"
    size="large"
    submitLabel="Sign in with Google">
-    {props.showTheThing
-      ? <BaseForm
-         url="/auth/google"
-         method="GET"
-         colour="blue"
-         size="large"
-         submitLabel="Sign in with Google">
-          Hello world
-        </BaseForm>
-      : "hello " + "howdy! "}
-    {props.showTheThing
-      ? <BaseForm
-         url="/auth/google"
-         method="GET"
-         colour="blue"
-         size="large"
-         submitLabel="Sign in with Google">
-          Hello world
-        </BaseForm>
-      : null}
-    {props.showTheThing
-      ? null
-      : <BaseForm
-         url="/auth/google"
-         method="GET"
-         colour="blue"
-         size="large"
-         submitLabel="Sign in with Google">
-          Hello world
-        </BaseForm>}
+    {props.showTheThing ? (
+      <BaseForm
+       url="/auth/google"
+       method="GET"
+       colour="blue"
+       size="large"
+       submitLabel="Sign in with Google">
+        Hello world
+      </BaseForm>
+    ) : (
+      "hello " + "howdy! "
+    )}
+    {props.showTheThing ? (
+      <BaseForm
+       url="/auth/google"
+       method="GET"
+       colour="blue"
+       size="large"
+       submitLabel="Sign in with Google">
+        Hello world
+      </BaseForm>
+    ) : null}
+    {props.showTheThing ? null : (
+      <BaseForm
+       url="/auth/google"
+       method="GET"
+       colour="blue"
+       size="large"
+       submitLabel="Sign in with Google">
+        Hello world
+      </BaseForm>
+    )}
     {props.showTheOtherThing ? <div>I am here</div> : <div attr="blah" />}
     {props.showTheOtherThing ? <div>I am here!!</div> : null}
   </BaseForm>
