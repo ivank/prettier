@@ -635,7 +635,9 @@ br_triggers_expression_break = (
 
 jsx_whitespace_after_tag = (
   <div>
-    <span a="a" b="b">
+    <span
+     a="a"
+     b="b">
       {variable}
     </span>{" "}
     ({variable})

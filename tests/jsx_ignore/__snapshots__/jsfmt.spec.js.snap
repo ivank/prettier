@@ -80,7 +80,10 @@ f(
 // this be formatted
 <div>
   {/* prettier-ignore */} foo
-  <Bar excessive spaces />
+  <Bar
+   excessive
+   spaces
+  />
 </div>;
 
 // this should remain as-is
