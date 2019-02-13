@@ -28,7 +28,7 @@ module.exports = {
     since: "0.17.0",
     category: CATEGORY_JAVASCRIPT,
     type: "boolean",
-    default: false,
+    default: true,
     description: "Put > on the last line instead of at a new line."
   },
   semi: {
@@ -53,8 +53,7 @@ module.exports = {
     category: CATEGORY_JAVASCRIPT,
     type: "choice",
     default: [
-      { since: "0.0.0", value: false },
-      { since: "0.19.0", value: "none" }
+      { since: "0.0.0", value: "es5" },
     ],
     description: "Print trailing commas wherever possible when multi-line.",
     choices: [

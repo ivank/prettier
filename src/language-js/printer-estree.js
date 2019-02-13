@@ -2214,12 +2214,11 @@ function printPathNoParens(path, options, print, args) {
       // string literal with newlines
       const shouldBreak =
         n.attributes &&
-        n.attributes.some(
-          attr =>
-            attr.value &&
-            isStringLiteral(attr.value) &&
-            attr.value.value.includes("\n")
-        );
+        n.attributes.length > 1;
+
+      const attrs = concat(
+        path.map(attr => concat([line, print(attr)]), "attributes")
+      );
 
       return group(
         concat([
@@ -2227,11 +2226,7 @@ function printPathNoParens(path, options, print, args) {
           path.call(print, "name"),
           path.call(print, "typeParameters"),
           concat([
-            indent(
-              concat(
-                path.map(attr => concat([line, print(attr)]), "attributes")
-              )
-            ),
+            align(1, attrs),
             n.selfClosing ? line : bracketSameLine ? ">" : softline
           ]),
           n.selfClosing ? "/>" : bracketSameLine ? "" : ">"

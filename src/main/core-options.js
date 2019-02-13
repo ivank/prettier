@@ -195,7 +195,7 @@ const options = {
     since: "0.0.0",
     category: CATEGORY_GLOBAL,
     type: "int",
-    default: 80,
+    default: 100,
     description: "The line length where Prettier will try wrap.",
     range: { start: 0, end: Infinity, step: 1 }
   },
@@ -239,7 +239,7 @@ const options = {
   tabWidth: {
     type: "int",
     category: CATEGORY_GLOBAL,
-    default: 2,
+    default: 4,
     description: "Number of spaces per indentation level.",
     range: { start: 0, end: Infinity, step: 1 }
   },
